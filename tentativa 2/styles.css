@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do Body */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Container que segura o título e o tabuleiro */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Espaço entre o título e o tabuleiro */
+}
+
+/* Título */
+h1 {
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+}
+
+/* Estilo do Tabuleiro */
+.tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(3, 250px); /* 3 colunas de 250px */
+    grid-template-rows: repeat(3, 250px); /* 3 linhas de 250px */
+    gap: 0; /* Sem espaçamento entre os quadrados */
+}
+
+/* Estilo de cada caixa */
+.caixa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    border: 3px solid black;
+}
+
+/* Estilo dos elementos dentro das caixas (O, X) */
+p {
+    color: black;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+}
